@@ -11,6 +11,5 @@ public class KafkaConsumer {
     @KafkaListener(topics = "topic-java", groupId = "myGroup")
     public void consume(String message){
         log.info("Received message: {}", message);
-
     }
 }
